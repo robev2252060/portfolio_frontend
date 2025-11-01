@@ -30,7 +30,7 @@ const ChatBot: React.FC = () => {
     setChatLog((prevLog) => [...prevLog, { sender: 'You', text: message }]);
 
     try {
-      const response = await axios.post('http://localhost:8000/chat/', {
+      const response = await axios.post('https://web-production-c476c.up.railway.app/chat/', {
         query: message,
       });
 
